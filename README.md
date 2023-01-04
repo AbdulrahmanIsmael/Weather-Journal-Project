@@ -11,6 +11,8 @@ Weather Journal App Project is to know the current weather in any city by typing
 3. JavaScript
 4. Express
 5. Node.js
+6. Cors Package
+7. Body parser Package
 
 ## Steps
 
