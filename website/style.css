@@ -1,0 +1,266 @@
+/* Start global rules */
+@font-face {
+  font-family: "Cloud";
+  src: url("./fonts/KingthingsBloone-3926.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: url("images/Weather-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* End global rules */
+
+/* Start Style */
+
+/* Style the header */
+header {
+  box-shadow: 3px 0 4px 3px #777;
+  background-image: url("./images/header.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+
+.headline {
+  font-family: "Cloud", Arial, sans-serif;
+  letter-spacing: 2px;
+  color: #eee;
+  font-size: 50px;
+  filter: drop-shadow(5px 0px 3px #555);
+  align-self: center;
+  transition: display 200ms ease;
+}
+
+main {
+  background-color: rgb(0, 0, 0, 0.7);
+  height: 83vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 30px 1fr;
+  column-gap: 50px;
+}
+
+.inputs {
+  background-image: url("./images/header.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  max-width: 800px;
+  max-height: 450px;
+  padding: 20px;
+}
+
+.arrow {
+  font-size: 50px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: arrowMove 500ms ease-in infinite alternate;
+}
+
+.entry {
+  border-radius: 10px;
+  background-image: url("./images/header.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 450px;
+  padding: 25px;
+}
+
+#date,
+#temp,
+#place,
+#content {
+  color: rgb(248, 247, 247);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.st {
+  font-family: "Cloud", sans-serif;
+  color: #222 !important;
+  font-size: 22px;
+  font-weight: 700;
+  padding-right: 5px;
+}
+
+label {
+  color: #444;
+  display: block;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 10px;
+}
+
+#zip {
+  font-family: "Oswald", sans-serif;
+  display: block;
+  height: 40px;
+  width: 250px;
+  font-size: 20px;
+  background: #ddd;
+  color: #333;
+  border: 0;
+  padding: 10px;
+  border-radius: 6px;
+  transition: border 200ms ease;
+}
+
+/* Removing Arrows from the input  */
+#zip::-webkit-outer-spin-button,
+#zip::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+#zip:focus {
+  border: 2px solid #4d99e7;
+}
+
+.feel {
+  margin-top: 10px;
+}
+
+#feelings {
+  font-family: "Oswald", sans-serif;
+  resize: horizontal;
+  background: #ddd;
+  color: #333;
+  max-width: 100%;
+  font-size: 20px;
+  border: 0;
+  padding: 10px;
+  border-radius: 7px;
+  transition: border 200ms ease;
+}
+
+#feelings:focus {
+  border: 2px solid #4d99e7;
+}
+
+#generate {
+  display: block;
+  /* width: 200px; */
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  background: #444;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 180ms ease;
+}
+
+#generate:hover {
+  opacity: 0.9;
+  font-size: 17px;
+}
+
+#wrong {
+  width: 250px;
+  display: none;
+  color: #fff;
+  background-color: #e81d0b;
+  padding: 8px;
+  font-weight: 700;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.title {
+  font-family: "Cloud", sans-serif;
+  display: none;
+  color: #222;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #555;
+  font-family: "Oswald", sans-serif;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: "Oswald", sans-serif;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-family: "Oswald", sans-serif;
+}
+
+/* Animations */
+@keyframes loading {
+  0% {
+  }
+
+  100% {
+    margin-top: -50px;
+  }
+}
+/* End Styling The app */
+
+@media (max-width: 900px) {
+  body {
+    background: #4d99e7;
+  }
+
+  .card {
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .inputs {
+    margin-top: 200px;
+  }
+
+  .entry {
+    width: 480px;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes arrowMove {
+  0% {
+    margin-right: 30px;
+  }
+
+  100% {
+    margin-right: -30px;
+  }
+}

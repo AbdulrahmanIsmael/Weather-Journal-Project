@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather Journal</title>
+    <link
+      href="https://fonnts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/43ff5cbbab.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- The Header -->
+    <header>
+      <h1 class="holder headline">Weather Journal</h1>
+    </header>
+    <!-- Main Section of the page -->
+    <main>
+      <div class="card">
+        <div class="inputs">
+          <!-- Zip Code -->
+          <div class="holder zip">
+            <label for="zip">Enter The Zip Code</label>
+            <input type="number" id="zip" placeholder="zip code here..." />
+          </div>
+          <div id="wrong">Please Check The Zip code</div>
+          <!-- User Feeling -->
+          <div class="holder feel">
+            <label for="feelings">How are you feeling today?</label>
+            <textarea
+              class="myInput"
+              id="feelings"
+              placeholder="How do you feel ?"
+              rows="4"
+              cols="45"
+            ></textarea>
+            <!-- Generate The Results -->
+          </div>
+          <button id="generate" type="submit">Show Results</button>
+        </div>
+
+        <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+        <!-- Results -->
+        <div class="holder entry">
+          <!-- The results -->
+          <div class="title">The Results :</div>
+          <div id="entryHolder">
+            <div id="date"></div>
+            <div id="place"></div>
+            <div id="temp"></div>
+            <div id="content"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Link JavaScript file -->
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>
