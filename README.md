@@ -26,3 +26,26 @@ Weather Journal App Project is to know the current weather in any city by typing
 8. created Post route in `server.js`
 9. created asynchronous function in `app.js` to post the data to the route.
 10. created another asynchronous function to update the UI Content
+
+---
+
+## 🚀 About Me
+I'm a front End developer, I have the ability to build interactive, responsive and Organized Websites.
+
+
+## 🛠 Skills
+- HTML
+- CSS
+- JavaScript
+- Sass
+- PugJs
+- GulpJs
+- BootStrap
+- React.js
+- React ecosystems (React Router - React Redux)
+- Redux | Redux Toolkit 
+
+
+## 🔗 Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdulrahman-mohammed22/)
+
